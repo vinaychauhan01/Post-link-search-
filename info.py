@@ -1,27 +1,3 @@
-import socket
-
-# Create a socket object
-server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
-# Define the host and port
-host = '127.0.0.1'  # Use your actual host IP or 'localhost'
-port = 8080  # The port number you want to add
-
-# Bind the socket to the host and port
-server_socket.bind((host, port))
-
-# Listen for incoming connections
-server_socket.listen(1)
-
-print(f"Server is listening on port {port}")
-
-# Accept incoming connections
-client_socket, client_address = server_socket.accept()
-
-print(f"Connection from: {client_address}")
-
-# Close the connection
-client_socket.close()
 
 API_ID       = "21518327"
 API_HASH     = "e72f588b3e4763f01eecfc3c4aa7e8ac"
