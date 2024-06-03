@@ -6,4 +6,4 @@ DATABASE_URI = "mongodb+srv://vinayjaat4:vinayjaat4@postfinder.dns5ykq.mongodb.n
 LOG_CHANNEL  = -1001839965169
 ADMIN        = 5741918628
 CHANNEL      = "supremedevelopment"
-PORT = environ.get("PORT", "8080")
+PORT = 8080
