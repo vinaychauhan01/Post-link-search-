@@ -7,12 +7,6 @@ from pyrogram.errors import UserNotParticipant
 from motor.motor_asyncio import AsyncIOMotorClient
 from pyrogram.types import ChatPermissions, InlineKeyboardMarkup, InlineKeyboardButton
 
-# Define the port number for MongoDB
-PORT = 27017
-
-# Update the DATABASE_URI with the port number
-DATABASE_URI = f"mongodb://localhost:{PORT}/"
-
 dbclient = AsyncIOMotorClient(DATABASE_URI)
 db       = dbclient["Channel-Filter"]
 grp_col  = db["GROUPS"]
